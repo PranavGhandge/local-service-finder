@@ -34,7 +34,7 @@ CREATE TABLE bookings (
   FOREIGN KEY (service_id) REFERENCES services(id) ON DELETE CASCADE
 );
 
-
+-- OTP Table
 CREATE TABLE otps (
   id INT AUTO_INCREMENT PRIMARY KEY,
   email VARCHAR(100),
@@ -44,6 +44,7 @@ CREATE TABLE otps (
 );
 
 
+-- Notifications Table
 CREATE TABLE notifications (
   id INT AUTO_INCREMENT PRIMARY KEY,
   user_id INT,
